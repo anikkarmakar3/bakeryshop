@@ -3,13 +3,14 @@ plugins {
     id 'com.google.gms.google-services'
 }
 
+
 android {
     compileSdk 31
 
     defaultConfig {
         applicationId "com.example.bakeryshop"
         minSdk 21
-        targetSdk 31
+        targetSdk 30
         versionCode 1
         versionName "1.0"
 
@@ -39,5 +40,8 @@ dependencies {
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
     implementation 'com.google.firebase:firebase-database:20.0.2'
+    implementation 'androidx.recyclerview:recyclerview:1.1.0'
+    implementation "androidx.cardview:cardview:1.0.0"
+    implementation 'com.razorpay:checkout:1.6.12'
 
 }

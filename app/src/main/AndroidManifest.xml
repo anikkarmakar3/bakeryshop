@@ -10,6 +10,23 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Bakeryshop">
         <activity
+            android:name=".PaymentActivity"
+            android:exported="true" >
+        <!--<intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>-->
+        </activity>
+        <activity
+            android:name=".BillingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SinglepageActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity2"
+            android:exported="false" />
+        <activity
             android:name=".HomeActivity"
             android:exported="false" />
         <activity

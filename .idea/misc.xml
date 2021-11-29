@@ -3,8 +3,15 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Anik Karmakar/AndroidStudioProjects/bakeryshop/app/src/main/res/layout/activity_billing.xml" value="0.22" />
         <entry key="..\:/Users/Anik Karmakar/AndroidStudioProjects/bakeryshop/app/src/main/res/layout/activity_home.xml" value="0.18" />
         <entry key="..\:/Users/Anik Karmakar/AndroidStudioProjects/bakeryshop/app/src/main/res/layout/activity_main.xml" value="0.18" />
+        <entry key="..\:/Users/Anik Karmakar/AndroidStudioProjects/bakeryshop/app/src/main/res/layout/activity_main2.xml" value="0.1" />
+        <entry key="..\:/Users/Anik Karmakar/AndroidStudioProjects/bakeryshop/app/src/main/res/layout/activity_payment.xml" value="0.18" />
+        <entry key="..\:/Users/Anik Karmakar/AndroidStudioProjects/bakeryshop/app/src/main/res/layout/activity_register.xml" value="0.1" />
+        <entry key="..\:/Users/Anik Karmakar/AndroidStudioProjects/bakeryshop/app/src/main/res/layout/activity_singlepage.xml" value="0.22" />
+        <entry key="..\:/Users/Anik Karmakar/AndroidStudioProjects/bakeryshop/app/src/main/res/layout/singlerow.xml" value="0.25" />
+        <entry key="..\:/Users/Anik Karmakar/AndroidStudioProjects/bakeryshop/app/src/main/res/menu/mainmenu.xml" value="0.22" />
       </map>
     </option>
   </component>

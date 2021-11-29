@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/billing1"
+    tools:context=".PaymentActivity">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/orderid"
+        android:background="#CCFFFFFF"
+        android:hint="order id"
+        android:textColorHint="@color/colorAccent"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_margin="50dp"
+        android:padding="10dp"
+        android:drawablePadding="10dp"
+        android:inputType="text"
+        />
+
+    <Button
+        android:layout_width = "280dp"
+        android:layout_height = "wrap_content"
+        android:id = "@+id/orderbtn"
+        android:text = "Order To Payment"
+        android:textColor="@color/red"
+        android:layout_below="@+id/orderid"
+        android:layout_margin="20dp"
+        android:layout_centerInParent="true"
+        android:background="@color/white"
+        />
+</RelativeLayout>

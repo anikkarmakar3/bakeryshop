@@ -1,21 +1,12 @@
 package com.example.bakeryshop;
 
 public class dataholder {
-    String username,password,phone,email;
+    String password,phone,email;
 
-    public dataholder(String username, String password, String phone, String email) {
-        this.username = username;
+    public dataholder(String password, String phone, String email){
         this.password = password;
         this.phone = phone;
         this.email = email;
-    }
-
-    public String getUsername() {
-        return username;
-    }
-
-    public void setUsername(String username) {
-        this.username = username;
     }
 
     public String getPassword() {

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SinglepageActivity">
+
+    <ImageView
+        android:id="@+id/desc_img"
+        android:layout_width="360dp"
+        android:layout_height="300dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/biskut8" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/desc_header"
+        android:layout_gravity="center_horizontal"
+        android:text="Dummy Order name"
+        android:textSize="30dp"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/desc_desc"
+        android:layout_gravity="center_horizontal"
+        android:text="Dummy Order name"
+        android:textSize="20dp"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"/>
+    <Button
+        android:id="@+id/orderbtn"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center_horizontal"
+        android:text="Order Now"
+        android:textSize="25dp"
+        android:onClick="billing"/>
+
+</androidx.appcompat.widget.LinearLayoutCompat>
