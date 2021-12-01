@@ -73,6 +73,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/forgotpass"
+        android:onClick="forget"
         android:layout_below="@id/createacc"
         android:text="Forgot password?"
         android:textColor="@color/red"
