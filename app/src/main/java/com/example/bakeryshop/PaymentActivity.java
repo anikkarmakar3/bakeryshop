@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.TextView;
 
 import com.razorpay.Checkout;
@@ -18,13 +19,30 @@ import org.json.JSONObject;
 public class PaymentActivity extends AppCompatActivity implements PaymentResultListener{
     TextView paytext;
     Button paybtn;
+    EditText orderamount;
+    TextView quantity;
+    TextView result;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_payment);
         Checkout.preload(getApplicationContext());
 
+        orderamount=(EditText)findViewById(R.id.orderamount);
         paytext=(TextView)findViewById(R.id.orderid);
+        quantity=(EditText)findViewById(R.id.orderquantity);
+        result=(EditText)findViewById(R.id.orderresult);
+        result.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                double a,b,c;
+                a=Double.parseDouble(orderamount.getText().toString());
+                b=Double.parseDouble(quantity.getText().toString());
+                c=a*b;
+                result.setText(Double.toString(c));
+            }
+        });
         paybtn=(Button)findViewById(R.id.orderbtn);
         paybtn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -54,8 +72,18 @@ public class PaymentActivity extends AppCompatActivity implements PaymentResultL
             options.put("image", "https://s3.amazonaws.com/rzp-mobile/images/rzp.png");
             //options.put("order_id", "order_DBJOWzybf0sJbb");//from response of step 3.
             options.put("theme.color", "#3399cc");
+            /*String payment=orderamount.getText().toString();
+            String totalamount=quantity.getText().toString();*/
+            String totalresult=result.getText().toString();
             options.put("currency", "INR");
-            options.put("amount", "100");//pass amount in currency subunits
+            /*double total=Double.parseDouble(payment);*/
+           /* double total2=Double.parseDouble(totalamount);*/
+            double total3=Double.parseDouble(totalresult);
+            total3=total3*100;
+            /*total=total*100;*/
+            /*total2=total*total2;*/
+            options.put("amount",total3);
+            /*options.put("amount", "100");*///pass amount in currency subunits
             options.put("prefill.email", "anikkarmakar3@gmail.com");
             options.put("prefill.contact","7001822650");
             JSONObject retryObj = new JSONObject();

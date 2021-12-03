@@ -18,6 +18,7 @@ public class SinglepageActivity extends AppCompatActivity {
         img=(ImageView) findViewById(R.id.desc_img);
         tv1=(TextView) findViewById(R.id.desc_header);
         tv2=(TextView) findViewById(R.id.desc_desc);
+
         img.setImageResource(getIntent().getIntExtra("imagename",0));
         tv1.setText(getIntent().getStringExtra("header"));
         tv2.setText(getIntent().getStringExtra("desc"));
