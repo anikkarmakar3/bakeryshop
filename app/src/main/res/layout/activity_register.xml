@@ -60,7 +60,7 @@
         android:layout_margin="10dp"
         android:padding="10dp"
         android:drawablePadding="10dp"
-        android:inputType="textPassword"
+        android:inputType="number"
         />
     <EditText
         android:layout_width="match_parent"
@@ -75,7 +75,7 @@
         android:layout_margin="10dp"
         android:padding="10dp"
         android:drawablePadding="10dp"
-        android:inputType="textPassword"
+        android:inputType="textEmailAddress"
         />
     <Button
         android:layout_width = "wrap_content"

@@ -11,8 +11,8 @@
         android:layout_height="wrap_content"
         android:padding="16dp">
 <ImageView
-    android:layout_width="80dp"
-    android:layout_height="80dp"
+    android:layout_width="130dp"
+    android:layout_height="130dp"
     android:src="@drawable/biskut1"
     android:layout_centerHorizontal="true"
     android:id="@+id/img1"/>
@@ -26,7 +26,8 @@
     android:textSize="25dp"
     android:layout_below="@+id/img1"
     android:layout_marginLeft="10dp"
-    android:layout_centerHorizontal="true"/>
+    android:layout_centerHorizontal="true"
+    android:gravity="center"/>
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -37,7 +38,8 @@
             android:layout_below="@+id/t1"
             android:id="@+id/t2"
             android:layout_marginLeft="10dp"
-            android:layout_centerHorizontal="true"/>
+            android:layout_centerHorizontal="true"
+            android:gravity="center"/>
     </RelativeLayout>
 
 </androidx.cardview.widget.CardView>
