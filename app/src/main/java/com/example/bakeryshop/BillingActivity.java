@@ -74,7 +74,7 @@ public class BillingActivity extends AppCompatActivity {
     }
     private void sendUserToPaymentPage() {
         Intent intent=new Intent(BillingActivity.this,PaymentActivity.class);
-        intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK|Intent.FLAG_ACTIVITY_NEW_TASK);
+        /*intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK|Intent.FLAG_ACTIVITY_NEW_TASK);*/
         startActivity(intent);
     }
 }

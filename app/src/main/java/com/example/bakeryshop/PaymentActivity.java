@@ -56,7 +56,7 @@ public class PaymentActivity extends AppCompatActivity implements PaymentResultL
 
     private void makepayment() {
         Checkout checkout = new Checkout();
-        checkout.setKeyID("rzp_test_bj2JWfBH43zqDz");
+        checkout.setKeyID("rzp_test_4d10gsksDbQlhJ");
 
         /*checkout.setImage(R.drawable.logo);*/
 
@@ -77,7 +77,7 @@ public class PaymentActivity extends AppCompatActivity implements PaymentResultL
             String totalresult=result.getText().toString();
             options.put("currency", "INR");
             /*double total=Double.parseDouble(payment);*/
-           /* double total2=Double.parseDouble(totalamount);*/
+            /* double total2=Double.parseDouble(totalamount);*/
             double total3=Double.parseDouble(totalresult);
             total3=total3*100;
             /*total=total*100;*/
